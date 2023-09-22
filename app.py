@@ -18,7 +18,7 @@ ngrok_token = os.getenv('NGROK_TOKEN')
 def index():
     return {'message': 'Hello, Devs!'}, 200
 
-
+print("!")
 @app.route('/slack/events', methods=['POST'])
 def slack_events():
     data = request.json
